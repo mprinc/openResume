@@ -1,0 +1,307 @@
+{
+	general: {
+		note: "This is a Researcher & Development version of Sasha Rudan’s Curriculum Vitae. There are also other compact (dedicated) versions of CV and one extended version of CV",
+	},
+	about: {
+		type: "Europass Curriculum Vitae",
+		version: "Researcher version",
+		logos: [{
+			url: "logos/europass.png",
+			width: "100px",
+		},],
+	},
+	personal: {
+		images: [{
+			url: "./images/norway-nature.jpg",
+			width: "250px",
+		},],
+		first: "Sasha",
+		firstAlternatives: "Саша, Saša",
+		last: "Rudan",
+		lastAlternatives: "Рудан, Rudan",
+		address: {
+			street: "100 Swafield St",
+			street2: "Clover Hill",
+			city: "Norwich",
+			zip: "NR5 9EA",
+			country: "United Kingdom",
+		},
+		phones: {
+			mobile: ["+44 7444481558, UK", "+381 64 31 000 51, Serbia"],
+		},
+		email: {
+			personal: ["mprinc@gmail.com", "sasha.rudan@gmail.com"],
+			work: ["sasharu@uio.no", "sasha.rudan@lingfil.uu.se"],
+		},
+		nationalities: ["Serbian", "Croatian"],
+		birth: "04.06.1978",
+		gender: "Male",
+	},
+	education: [{
+			dates: "Defense expected by 2023",
+			title: "PhD in Computer Science",
+			institution: "University of Oslo, Oslo, Norway",
+			subjects: "Knowledge Federation, Socio-technical system modelling, collective intelligence,  social-processes optimization",
+		},
+		{
+			dates: "November 2004",
+			title: "MPhil in Computer Science and Electrical Engineering",
+			institution: "Department of Computer Science and Information Theory, School of Electrical Engineering, University of Belgrade, Serbia",
+			subjects: "Internet protocols (theory/app), Computer security (theory/app), Information theory, Project managing, Information systems, Graphic (2D, 3D, Fractals)",
+		},
+		{
+			dates: "July 2002",
+			title: "BA in Computer Science and Electrical Engineering",
+			institution: "Department of Computer Science and Information Theory, School of Electrical Engineering, University of Belgrade, Serbia",
+			subjects: "Data structures and algorithms, DB, OS (multitasking, multithreading, IPC), compilers, VHDL design, mathematics (highly advanced, 5 courses), physics (highly advanced), electronic (highly advanced), telecommunications (highly advanced)",
+		}
+	],
+	work: [
+
+		{
+			dates: "2021-2023",
+			position: "Researcher",
+			activities: "Design and implementation of a DH infrastructure for inter-disciplinary research on hagiographic texts",
+			employer: "Uppsala University, Department of Linguistics and Philology, Engelska parken, Thunbergsvägen 3H, S-751 26 Uppsala, Sweden, Phone: +46 (0)18 471 2252, https://www.lingfil.uu.se/the-department/",
+
+		},
+		{
+			dates: "2018-2019",
+			position: "Postdoctoral Level Position",
+			activities: "Semantic Ontological music information retrieval infrastructure, holistic evaluation, creativity processes evaluation, designing workflow infrastructure",
+			employer: "School of Electronic Engineering and Computer Science, Queen Mary University of London",
+
+		},
+		{
+			dates: "2017",
+			position: "Postdoctoral Level Position",
+			activities: "Federated Databases - Database Mining Group",
+			employer: "Umeå University, Sweden",
+
+		},
+		{
+			dates: "2015 - 2016",
+			position: "R&D on EarthCube project (US NSF funded)",
+			activities: "Designing model ontologies and developing tool for describing models ",
+			employer: "Research for INSTAAR, University of Colorado — Boulder",
+
+		},
+		{
+			dates: "2016-to date",
+			position: "CEO, Co-Founder",
+			activities: "an NGO assembled around the motto - Science and Art for Humanity and Culture",
+			employer: "ChaOS, NGO",
+
+		},
+		{
+			dates: "2011 - 2014",
+			position: "Editor of column on socio-technical systems in Serbian research magazine, InfoM",
+			activities: "Scientific Journalist",
+			sector: "Research Editor",
+			employer: "InfoM",
+		},
+		{
+			dates: "2011",
+			position: "R&D",
+			activities: "1)	NUI (Natural User Interface) interaction with 3D virtual space; navigation, manipulation, presentation, 2) NUI interaction with audio and graphic visualization, for children with special needs, 3) Camera Motion Detection Interaction",
+			employer: "ITERA GAZETTE",
+		},
+		{
+			dates: "2010",
+			position: "Senior Developer (Social-media and online games and gamification)",
+			activities: "R&D",
+			employer: "Visual Funk",
+
+		},
+		{
+			dates: "2010",
+			position: "R&D",
+			activities: "GeoSocial Micro blogging, OpenSocial protocols",
+			employer: "HeadsWare, Serbia; MagicWand Solutions, Serbia",
+			sector: "GeoSocial, Android OS",
+
+		},
+		{
+			dates: "2008",
+			position: "R&D",
+			activities: "TopicMaps, Spring algorithms, relevancies, semantics",
+			employer: "HeadsWare, Serbia; KnowledgeFederation, Oslo University, Norway",
+
+		},
+		{
+			dates: "July 2007 - August 2008",
+			position: "R&D",
+			activities: "Protocols/Cryptography, NDIS IM drivers, Windows Mobile, UML modeling",
+			employer: "Birdstep Technology ASA, Oslo, Norway",
+			sector: "Connection Manager Development (Windows Desktop & PDA)",
+
+		},
+		{
+			dates: "March 2006 onwards",
+			position: "Part-time researcher",
+			activities: "Identifying paradigms, developing models",
+			employer: "KnowledgeFederation, Oslo University, Norway",
+			sector: "Knowledge representation, collection, and organisation",
+
+		},
+		{
+			dates: "January 2007 - July 2007",
+			position: "Architect manager, R&D",
+			activities: "Seamless switchover GSM/VoIP on PDA devices",
+			employer: "VoiceRoaming ASA, Oslo, Norway",
+			sector: "GSM/VoIP",
+
+		},
+		{
+			dates: "2006",
+			position: "Part-time Researcher",
+			activities: "Introducing to FOREX theory and applications, Neural Network prediction appliance",
+			employer: "Not permitted to disclose",
+			sector: "Automated FOREX",
+
+		},
+		{
+			dates: "July 2004 - November 2004",
+			position: "Research Projects Manager, Researcher",
+			activities: "Leading young researchers of Belgrade University, Researching in few areas: OCR, Data conceptualization, semantic and ontology",
+			employer: "IPSI, Belgrade, Serbia",
+			sector: "Research Outsourcing",
+
+		},
+		{
+			dates: "January 2004 - December 2004",
+			position: "Project Manager, Researcher",
+			activities: "fast file hash management, digitally sealed file system",
+			sector: "Researches in File Systems",
+			employer: "StorageTek, USA (lately acquired by Sun Microsystems)",
+		}
+	],
+	trainings: [{
+			dates: "July 2016",
+			title: "Course: Systemic Science",
+			institution: "Boulder, Colorado",
+		},
+		{
+			dates: "July 2012",
+			title: "Course: Summer School in Bilingualism",
+			institution: "Bangor University, Wales",
+		},
+
+		{
+			dates: "January 2008 - March 2008",
+			title: "Course: Business plan and managing e-business",
+			institution: "Faculty of management science, Belgrade, Serbia",
+		},
+		{
+			dates: "Autumn 2006",
+			title: "Seminar: Starting up small companies",
+			institution: "OSCE+ SEED",
+		},
+		{
+			dates: "Autumn 2005",
+			title: "Parallel computing summer school",
+			subjects: "(1) Hardware, programming and algorithms, (2) Fluid & gas model and simulation, (3) Parallel programming languages",
+			institution: "Munich Computer Science Faculty, Germany",
+			level: "Course, diploma, unconditional acceptance to PhD studies at Munich Computer Science Faculty",
+		},
+		{
+			dates: "1992-1993",
+			title: "Computer Science Courses",
+			subjects: "Parallel computing (hardware and simulator), OO concepts (Modula), 3D graphics",
+			institution: "Research Center for Young Talents, Petnica, Serbia",
+		}
+	],
+	skills: {
+		social: [
+			"Good in conversation and spreading a relaxed atmosphere, helping people I am managing feel group responsibilities and follow leadership",
+			"Snow/water skiing, cycling, inline-skating, dancing, fishing, yoga, capoera, boxing",
+		],
+		organizational: ["Project management, negotiation, team building, brainstorming management"],
+		computer: {
+			technologies: [
+				"Social Media Marketing (Facebook, Twitter, Youtube, blogs, OpenSocial)",
+				"Project management tools, Issue tracker, CRM tools, e-business-commerce tools",
+				"Knowledge/data representation, XML, XSD, XSLT,  RDF",
+				"Internet protocols (all OSI layers, theory & development)",
+				"Neural Networks, Cryptography (Theory, development), Hardware, VHDL",
+				"Flash, HTML, CSS, DHTML, DOM, JavaScript, AJAX",
+				"Computer Graphic (2D, 3D, Fractals, 3D Studio, Swift3D)",
+				"VoIP (Theory, development (PDA), Asterisk)",
+				"System Windows programming, System Linux/UNIX programming ",
+				"Linux administration, Windows administration, (W)LAN network administration",
+				"WEB administration: Apache, PHP, MySQL, IIS, TomCat",
+			],
+			"programmingLanguages": [
+
+				"Python, C(++), C#, JavaScript (OOP, MVC, Backend (node.js))",
+				"ActionScript 3, Java, Objective-C, ASM, Modula, Prolog",
+				"Perl, Linux shell scripts, PHP",
+			],
+			technical: "Hardware knowledge, network administration, experienced with mechanical repairing",
+		},
+		artistic: [
+			"Graphic/WEB/GUI Design (beside normal activities, enjoy designing logos)",
+			"Writing poetry and short stories (published in collections, won prizes)",
+			"Drawing (1 prize, district-level, 1992)",
+		],
+		other: ["Practicing guitar and Serbian “flute” (frula), dancing, capoeira, snowboarding, tennis, slam/active poetry"],
+	},
+	references: [{
+			name: "Christian Høgel",
+			positions: [
+				"professor, Classical studies",
+				"co-director, Retracing connections (Uppsala & Odense)"
+			],
+			institution: "SDU (Odense, Denmark)",
+			emails: [
+				"hogel@sdu.dk",
+			],
+			relation: "Employer and Project Co-Lead at Uppsala, Retracing Connections"
+		}, {
+			name: "George Fazekas",
+			positions: [
+				"Assoc. Prof. (Senior Lecturer)",
+			],
+			institution: "Centre for Digital Music (C4DM), School of Elec. Eng. and Comp. Sci., Queen Mary University of London (QMUL), Mile End Road, E1 4NS, London, UK",
+			emails: [
+				"george.fazekas@qmul.ac.uk",
+			],
+			relation: "Employer and Project Co-Lead at QMUL, Audio Commons H2020 funded project"
+		}, {
+			name: "Dino Karabeg",
+			positions: [
+				"Associate Professor",
+			],
+			institution: "Department of Informatics at the University of Oslo, NO-0316 OSLO, Norway",
+			emails: [
+				"dino@uio.no",
+			],
+			relation: "PhD supervisor, IFI, UiO"
+		}, {
+			name: "Håkon Bryhni",
+			positions: [
+				"UiO, Research Professor, Head of Department",
+				"Entrepreneur, Angel Investor",
+			],
+			institution: "Simula Metropolitan Centre for Digital Engineering, Kristian Augusts gate 23, 0164 Oslo",
+			emails: [
+				"bryhni@bryhni.com",
+				"haakonbryhni@simula.no",
+			],
+			relation: "Employer at R&D company, Voice Roaming"
+		}, {
+			name: "Veljko Milutinovic",
+			positions: [
+				"Professor, Head of Department",
+				"Fellow of IEEE",
+				"Research Outsourcing, Entrepreneur"
+			],
+			institution: "Department of Computer Science and Computer Engineering, School of Electrical Engineering, University of Belgrade, POB 35-54, 11120 Belgrade, Serbia, Yugoslavia",
+			emails: [
+				"vm@etf.bg.ac.yu",
+			],
+			relation: "Bachelor and Master supervisor"
+		},
+	]
+
+}

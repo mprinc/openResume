@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{personal.first}} {{personal.last}}</title>
+	<style>
+		@media screen {
+			.content {
+				/* important to be set */
+				margin: auto;
+				/* important to be set, but the value is your choice */
+				width: 80%;
+				max-width: 1000px;
+				padding: 10px;
+			}
+		}
+		.heading {
+			margin-bottom: 25px;
+		}
+		
+		h2 {
+			border-bottom: solid 1px #888;
+			/* border-radius: 15px; */
+			/* https://www.w3schools.com/css/css3_gradients.asp */
+			background-image: linear-gradient(to bottom, #e8e8e8, #aaa);
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+	
+		.about_type {
+			color: lightgreen;
+			font-style: italic;
+			font-size: 0.8em;
+		}
+
+		.prop {
+			font-weight: bold;
+			border-right: 3px lightgray solid;
+			margin-right: 15px;
+			padding-right: 5px;
+			text-align: right;
+		}
+		.value {
+			padding-left: 5px;
+		}
+
+		.valueStressed {
+			font-weight: bold;
+		}
+		
+		.logo {
+			padding-right: 25px;
+			border-right: 1px gray solid;
+			text-align: right;
+			width: 5%;
+		}
+		.image {
+			padding-left: 25px;
+			text-align: left;
+			width: 25%;
+		}
+		.note {
+			padding-left: 25px;
+			border-left: 1px gray solid;
+			text-align: left;
+			width: 15%;
+			font-style: italic;
+		}
+		.note_text {
+			font-weight: bold;
+		}
+		.openResume_open {
+			font-weight: bold;
+			color: rgb(149, 221, 40);
+			font-style: italic;
+		}
+		.openResume_resume {
+			font-weight: bold;
+			color: green;
+			font-style: italic;
+		}
+
+		footer{
+			border-top: 1px green solid;
+			text-align: right;
+			color: rgb(125, 217, 125);
+			padding-right: 25px;
+			padding-top: 5px;
+			padding-bottom: 15px;
+			margin-top: 25px;
+		}
+	</style>
+  </head>
+  <body>
+
+<div class="content">
+
+	<table class="heading">
+		<tr>
+			<td class="logo">
+				<h1>{{personal.first}} {{personal.last}}</h1>
+				<h2>Academic CV</h2>
+				{{#about.logos}}
+				<img src="{{url}}" width="{{width}}"/>
+				{{/about.logos}}
+				<div class="about_type">{{about.type}}</div>
+			</td>
+			<td class="image">
+				{{#personal.images}}
+				<img src="{{url}}" width="{{width}}"/>
+				{{/personal.images}}
+			</td>
+			<td class="note"><span class="note_text">NOTE:</span> {{general.note}}</td>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<td class="prop">First name(s) / Surname(s)</td>
+			<td class="value">{{personal.first}} ({{personal.firstAlternatives}}) / {{personal.last}}({{personal.lastAlternatives}})</td>
+		</tr>
+		<!-- <tr>
+			<td class="prop">Address(es)</td>
+			<td class="value">{{personal.address.street}} {{personal.address.street2}}, {{personal.address.zip}}  {{personal.address.city}}, {{personal.address.country}} </td>
+		</tr> -->
+
+		<!-- <tr>
+			<td class="prop">Telephone(s)</td>
+			<td class="value">mobile: {{personal.phones.mobile}} </td>
+		</tr> -->
+
+		<tr>
+			<td class="prop">E-mail(s)</td>
+			<td class="value">work: {{personal.email.work}} </td>
+		</tr>
+
+		<tr>
+			<td class="prop">Nationalities</td>
+			<td class="value">{{personal.nationalities}} </td>
+		</tr>
+
+		<tr>
+			<td class="prop">Date of birth</td>
+			<td class="value">{{personal.birth}} </td>
+		</tr>
+
+		<tr>
+			<td class="prop">Gender</td>
+			<td class="value">{{personal.gender}} </td>
+		</tr>
+
+	</table>
+
+<h2>Education</h2>
+
+<table>
+	{{#education}}
+		<tr>
+			<td class="prop">Dates</td>
+			<td class="value">{{dates}}</td>
+		</tr>
+		<tr>
+			<td class="prop">Occupation or position held</td>
+			<td class="value valueStressed">{{title}}</td>
+		</tr>
+		<tr>
+			<td class="prop">Name and address of employer</td>
+			<td class="value">{{institution}}</td>
+		</tr>
+		<tr>
+			<td class="prop">Type of business or sector</td>
+			<td class="value">{{subjects}}</td>
+		</tr>
+		<tr>
+			<td class="value">&nbsp;</td>
+			<td class="value">&nbsp;</td>
+		</tr>
+	{{/education}}
+</table>
+
+<h2>Work experience</h2>
+
+<table>
+	{{#work}}
+		<tr>
+			<td class="prop">Dates</td>
+			<td class="value">{{dates}}</td>
+		</tr>
+		<tr>
+			<td class="prop">Occupation or position held</td>
+			<td class="value valueStressed">{{position}}</td>
+		</tr>
+		<tr>
+			<td class="prop">Main activities and responsibilities</td>
+			<td class="value">{{activities}}</td>
+		</tr>
+		{{#sector}}
+		<tr>
+			<td class="prop">Type of business or sector</td>
+			<td class="value">{{sector}}</td>
+		</tr>
+		{{/sector}}
+		<tr>
+			<td class="prop">Name and address of employer</td>
+			<td class="value">{{employer}}</td>
+		</tr>
+		<tr>
+			<td class="value">&nbsp;</td>
+			<td class="value">&nbsp;</td>
+		</tr>
+	{{/work}}
+</table>
+
+<h2>Additional training</h2>
+
+	<table>
+		{{#trainings}}
+		<tr>
+			<td class="prop">Dates</td>
+			<td class="value">{{dates}}</td>
+		</tr>
+		<tr>
+			<td class="prop">Title of qualification awarded</td>
+			<td class="value valueStressed">{{title}}</td>
+		</tr>
+		{{#subjects}}
+		<tr>
+			<td class="prop">Principal subjects/occupational skills covered</td>
+			<td class="value">{{subjects}}</td>
+		</tr>
+		{{/subjects}}
+		<tr>
+			<td class="prop">Organisation providing education</td>
+			<td class="value">{{institution}}</td>
+		</tr>
+		{{#level}}
+		<tr>
+			<td class="prop">Level in national or international classification</td>
+			<td class="value">{{level}}</td>
+		</tr>
+		{{/level}}
+		<tr>
+			<td class="value">&nbsp;</td>
+			<td class="value">&nbsp;</td>
+		</tr>
+		{{/trainings}}
+	</table>
+
+<h2>Skills</h2>
+
+
+<h3>Social</h3>
+	<ul>
+		{{#skills.social}}
+		<li>{{.}}</li>
+		{{/skills.social}}
+	</ul>
+
+<h3>Organizational</h3>
+	<ul>
+		{{#skills.organizational}}
+		<li>{{.}}</li>
+		{{/skills.organizational}}
+	</ul>
+
+<h3>Computer</h3>
+
+<h4>Technologies</h4>
+	<ul>
+		{{#skills.computer.technologies}}
+		<li>{{.}}</li>
+		{{/skills.computer.technologies}}
+	</ul>
+<h4>Programming Languages</h4>
+	<ul>
+		{{#skills.computer.programmingLanguages}}
+		<li>{{.}}</li>
+		{{/skills.computer.programmingLanguages}}
+	</ul>
+<h4>Technical</h4>
+	<ul>
+		{{#skills.computer.technical}}
+		<li>{{.}}</li>
+		{{/skills.computer.technical}}
+	</ul>
+
+<h3>Artistic</h3>
+	<ul>
+		{{#skills.artistic}}
+		<li>{{.}}</li>
+		{{/skills.artistic}}
+	</ul>
+
+<h3>Other</h3>
+	<ul>
+		{{#skills.other}}
+		<li>{{.}}</li>
+		{{/skills.other}}
+	</ul>
+
+	<h2>References</h2>
+
+	<table>
+		{{#references}}
+			<tr>
+				<td class="prop">Name</td>
+				<td class="value valueStressed">{{name}}</td>
+			</tr>
+			{{#positions}}
+			<tr>
+				<td class="prop">Position</td>
+				<td class="value">{{.}}</td>
+			</tr>
+			{{/positions}}
+			<tr>
+				<td class="prop">institution</td>
+				<td class="value">{{institution}}</td>
+			</tr>
+			{{#emails}}
+			<tr>
+				<td class="prop">email</td>
+				<td class="value">{{emails}}</td>
+			</tr>
+			{{/emails}}
+			<tr>
+				<td class="prop">relation</td>
+				<td class="value">{{relation}}</td>
+			</tr>
+			<tr>
+				<td class="value">&nbsp;</td>
+				<td class="value">&nbsp;</td>
+			</tr>
+		{{/references}}
+	</table>
+
+</div>
+
+	<footer>
+		Generated with "<span class="openResume_open">Open</span><span class="openResume_resume">Resume</span>"
+	</footer>
+  </body>
+</html>
