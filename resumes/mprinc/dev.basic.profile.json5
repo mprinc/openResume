@@ -1,0 +1,16 @@
+{
+	"hide": {
+		"general": true,
+		"personal": {
+			address: true,
+			// phones: true,
+			birth: true,
+			gender: true,
+		},
+		"references": {
+
+		},
+	},
+	"show": {
+	}
+}

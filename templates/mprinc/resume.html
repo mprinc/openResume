@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{personal.first}} {{personal.last}}</title>
+    <title>{{personal.first}} {{personal.last}}'s CV</title>
 	<style>
 		@media screen {
 			.content {
@@ -30,7 +30,17 @@
 			padding-top: 5px;
 			padding-bottom: 5px;
 		}
-	
+
+		h3 {
+			border-bottom: solid 1px #888;
+			/* border-radius: 15px; */
+			/* https://www.w3schools.com/css/css3_gradients.asp */
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+
 		.about_type {
 			color: lightgreen;
 			font-style: italic;
@@ -101,9 +111,9 @@
 
 	<table class="heading">
 		<tr>
-			<td class="logo">
+			<td class="logo"> 
 				<h1>{{personal.first}} {{personal.last}}</h1>
-				<h2>Academic CV</h2>
+				<h2>{{general.type}}</h2>
 				{{#about.logos}}
 				<img src="{{url}}" width="{{width}}"/>
 				{{/about.logos}}
@@ -123,15 +133,18 @@
 			<td class="prop">First name(s) / Surname(s)</td>
 			<td class="value">{{personal.first}} ({{personal.firstAlternatives}}) / {{personal.last}}({{personal.lastAlternatives}})</td>
 		</tr>
-		<!-- <tr>
+		{{^__hide.personal.address}}
+		<tr>
 			<td class="prop">Address(es)</td>
 			<td class="value">{{personal.address.street}} {{personal.address.street2}}, {{personal.address.zip}}  {{personal.address.city}}, {{personal.address.country}} </td>
-		</tr> -->
-
-		<!-- <tr>
+		</tr>
+		{{/__hide.personal.address}}
+		{{^__hide.personal.phones}}
+		<tr>
 			<td class="prop">Telephone(s)</td>
 			<td class="value">mobile: {{personal.phones.mobile}} </td>
-		</tr> -->
+		</tr>
+		{{/__hide.personal.phones}}
 
 		<tr>
 			<td class="prop">E-mail(s)</td>
@@ -143,15 +156,19 @@
 			<td class="value">{{personal.nationalities}} </td>
 		</tr>
 
+		{{^__hide.personal.birth}}
 		<tr>
 			<td class="prop">Date of birth</td>
 			<td class="value">{{personal.birth}} </td>
 		</tr>
+		{{/__hide.personal.birth}}
 
+		{{^__hide.personal.gender}}
 		<tr>
 			<td class="prop">Gender</td>
 			<td class="value">{{personal.gender}} </td>
 		</tr>
+		{{/__hide.personal.gender}}
 
 	</table>
 
@@ -159,10 +176,10 @@
 
 <table>
 	{{#education}}
-		<tr>
+		<!-- <tr>
 			<td class="prop">Dates</td>
 			<td class="value">{{dates}}</td>
-		</tr>
+		</tr> -->
 		<tr>
 			<td class="prop">Occupation or position held</td>
 			<td class="value valueStressed">{{title}}</td>
@@ -209,20 +226,68 @@
 			<td class="value">{{employer}}</td>
 		</tr>
 		<tr>
+			<td class="prop">Technologies</td>
+			<td class="value">{{technologies}}</td>
+		</tr>
+		<tr>
 			<td class="value">&nbsp;</td>
 			<td class="value">&nbsp;</td>
 		</tr>
 	{{/work}}
 </table>
 
-<h2>Additional training</h2>
+<h2>Academic</h2>
 
-	<table>
-		{{#trainings}}
+<h3>Publications</h3>
+<table>
+	{{#academic_publications}}
 		<tr>
 			<td class="prop">Dates</td>
 			<td class="value">{{dates}}</td>
 		</tr>
+		<tr>
+			<td class="prop">Title</td>
+			<td class="value valueStressed">{{title}}</td>
+		</tr>
+	{{/academic_publications}}
+</table>
+
+<h3>Invited Lectures and Presentations</h3>
+<table>
+	{{#academic_invitations}}
+		<tr>
+			<td class="prop">Dates</td>
+			<td class="value">{{dates}}</td>
+		</tr>
+		<tr>
+			<td class="prop">Title</td>
+			<td class="value valueStressed">{{title}}</td>
+		</tr>
+	{{/academic_invitations}}
+</table>
+
+<h3>Conferences</h3>
+<table>
+	{{#academic_conferences}}
+		<tr>
+			<td class="prop">Dates</td>
+			<td class="value">{{dates}}</td>
+		</tr>
+		<tr>
+			<td class="prop">Title</td>
+			<td class="value valueStressed">{{title}}</td>
+		</tr>
+	{{/academic_conferences}}
+</table>
+
+<h2>Additional training</h2>
+
+	<table>
+		{{#trainings}}
+		<!-- <tr>
+			<td class="prop">Dates</td>
+			<td class="value">{{dates}}</td>
+		</tr> -->
 		<tr>
 			<td class="prop">Title of qualification awarded</td>
 			<td class="value valueStressed">{{title}}</td>
@@ -260,7 +325,7 @@
 		{{/skills.social}}
 	</ul>
 
-<h3>Organizational</h3>
+<h3>Organizational/Design/Modeling</h3>
 	<ul>
 		{{#skills.organizational}}
 		<li>{{.}}</li>
@@ -288,7 +353,7 @@
 		{{/skills.computer.technical}}
 	</ul>
 
-<h3>Artistic</h3>
+<h3>UI/UX/Artistic</h3>
 	<ul>
 		{{#skills.artistic}}
 		<li>{{.}}</li>
@@ -302,6 +367,7 @@
 		{{/skills.other}}
 	</ul>
 
+	{{^__hide.references}}
 	<h2>References</h2>
 
 	<table>
@@ -336,6 +402,7 @@
 			</tr>
 		{{/references}}
 	</table>
+	{{/__hide.references}}
 
 </div>
 

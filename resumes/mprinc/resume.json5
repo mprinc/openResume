@@ -1,6 +1,7 @@
 {
 	general: {
 		note: "This is a Researcher & Development version of Sasha Rudan’s Curriculum Vitae. There are also other compact (dedicated) versions of CV and one extended version of CV",
+		type: "R&D CV",
 	},
 	about: {
 		type: "Europass Curriculum Vitae",
@@ -27,7 +28,10 @@
 			country: "United Kingdom",
 		},
 		phones: {
-			mobile: ["+44 7444481558, UK", "+381 64 31 000 51, Serbia"],
+			mobile: [
+				"+381 64 31 000 51, (Serbia)",
+				"+44 7444481558, (UK)", 
+			],
 		},
 		email: {
 			personal: ["mprinc@gmail.com", "sasha.rudan@gmail.com"],
@@ -38,8 +42,8 @@
 		gender: "Male",
 	},
 	education: [{
-			dates: "Defense expected by 2023",
-			title: "PhD in Computer Science",
+			dates: "Defense expected by 2026",
+			title: "PhD in Computer Science (to be defended)",
 			institution: "University of Oslo, Oslo, Norway",
 			subjects: "Knowledge Federation, Socio-technical system modelling, collective intelligence,  social-processes optimization",
 		},
@@ -57,41 +61,92 @@
 		}
 	],
 	work: [
-
+		{
+			dates: "2024-2025",
+			position: "Technical Product Owner, System Architect, and partially a core developer",
+			activities: '(i) **features and grants** - identifying needs and implementing DH infrastructure for inter-disciplinary research on Henrik Ibsen texts, writing grant applications, and coordinating with partners, (ii) **infrastructure** - interconnecting, harmonizing, and refactoring a highly heterogeneous infrastructure, modernizing (refactoring PHP+Perl+Python+Java => TypeScript, facsimiles+mediastore, moving to podman+Kubernetes) (iii) - **TEI/XML** - TEI/XML corpus management, XSLT, xQuery, ExistDb, Cocoon, Saxonica (iv) **AI** - integrating gen-AI, content interpretation, and visualization tools, (v) **AI & Creativity** implementing an AI-generative "jamming" platform for evolving and transforming literary texts, and fusing with multimedia, (vi)**automation** - workflows, data processing, content scraping and synchronizing, proxy/tunneling ',
+			employer: "Oslo University, Department of Linguistics and Scandinavian Studies, https://www.hf.uio.no/is/english/",
+			technologies: "Python, TypeScript, Vue, Node.js, Nest.js, XML, XSLT, XQuery, Elasticsearch, RAG, GenAI, Perl, PHP, microservices, event-driven and workflow distributed systems, Scraping, ETL, OpenStack, OpenShift, Kubernetes, Docker, podman",
+			thumbnail: "projects/ibsen.png",
+			title: "Maintaining & expanding the heterogeneous Henrik Ibsen infrastructure",
+			skills: ["TypeScript", "AI Development", "Kubernetes", "Python", "Automated Workflow"],
+		},
+		{
+			dates: "2023-2024",
+			position: "System Architect and core developer",
+			activities: "Developing an AI augmented platform and AI processing workflow (pipeline) for video processing, analysis, media and meta extraction, and (re)generation, managing AWS infrastructure, load balancing, scaling, microservices, and React frontend, AWS management. Customer analysis (Google Analytics, Google Data Studio, BigQuery, user traction, and visualization)",
+			employer: "Terra AI, acquired by Pictory, https://pictory.ai/",
+			technologies: "Python, Django, TypeScript, React, Node.js, BigQuery, Google Data Studio, microservices, event-driven and workflow distributed systems, ML/AI (video and sound processing and generation), microservices, AWS, CI/CD",
+			title: "AI flows, AWS, customer analysis, backend scalability, and frontend",
+			thumbnail: "projects/terra.png",
+			skills: ["AI Video Generator", "AWS Application", "React", "Python", "AI-Enhanced Classification", "Published on Jul 15, 2025"],
+		},
 		{
 			dates: "2021-2023",
-			position: "Researcher",
+			position: "Technical Product Owner and core developer",
 			activities: "Design and implementation of a DH infrastructure for inter-disciplinary research on hagiographic texts",
-			employer: "Uppsala University, Department of Linguistics and Philology, Engelska parken, Thunbergsvägen 3H, S-751 26 Uppsala, Sweden, Phone: +46 (0)18 471 2252, https://www.lingfil.uu.se/the-department/",
-
+			employer: "Uppsala University, Department of Linguistics and Philology, https://www.lingfil.uu.se/the-department/",
+			technologies: "Python, TypeScript, Vue, Node.js, event-driven and workflow distributed systems, microservices, CI/CD, OpenStack, OpenShift, Kubernetes, Docker",
+		},
+		{
+			dates: "2021",
+			// probably the correct dates are 2021-2022, but I put like this to avoid confusion of dates with the other positions
+			position: "System Architect and core developer",
+			activities: "Implementing an AI/ML/NLP informed Financial Market News Aggregator with unique focus on personalization and user experience. Vue.js frontend, Node.js + Python backend, developed no-code CMS for content management",
+			employer: "TickerAI (https://www.ticker.ai/), Mark Cuban project",
+			technologies: "Angular, TypeScript, Node.js, ElasticSearch, microservices, event-driven and workflow distributed systems, No-code CMS, ansible",
+			title: "Developing backend, search, and frontend features @ TickerAI",
+			thumbnail: "projects/tickerai.png",
+			skills: ["AI Marketplace", "No-Code Development", "Vue.js", "Python", "Node.js"],
+		},
+		{
+			dates: "...",
+			position: "System analyst and designer",
+			activities: "Catalyst is an intelligent software tool that empowers one or more experts, who are not programmers, to create knowledge bases in many domains of knowledge quickly. The expert uses Catalyst to create questions, answers, scenarios, rules (IF-THEN-ELSE statements), and decision tables, then associates each answer with one or more rules.\n\nDoing a set of business and deep customer research tasks, from customer journey to personas, toward defining the functionality of ver.2 of the Catalyst tool, focused on the healthcare domain of knowledge.",
+			employer: "InCap Corporation, California, USA",
+			technologies: "System analysis, system design, customer journey mapping, user stories, personas, D3.js, TypeScript",
+			title: "Catalyst Tool - AI-driven knowledge management platform",
+			thumbnail: "projects/catalyst.png",
+			skills: ["Business Development", "Customer Analysis", "System Analysis", "Systems Modeling", "Software Architecture & Design"
+			],
+		},
+		{
+			dates: "2019-2021",
+			position: "System Architect and core developer",
+			activities: "Implementing frontend and backend for an AI anti-bias exploratory and negotiation platform",
+			employer: "POIETO (https://www.poieto.com/), Feminist AI (https://www.feminist.ai/), NVIDIA Inception Program",
+			technologies: "Angular, TypeScript, Node.js",
+			title: "Frontend, AI bias @ POIETO",
+			thumbnail: "projects/poieto.png",
+			skills: ["Angular", "TypeScript", "Node.js", "AI Bias Mitigation", "Automated Workflow"],
 		},
 		{
 			dates: "2018-2019",
-			position: "Postdoctoral Level Position",
+			position: "System Architect and core developer - Postdoctoral Level Position",
 			activities: "Semantic Ontological music information retrieval infrastructure, holistic evaluation, creativity processes evaluation, designing workflow infrastructure",
 			employer: "School of Electronic Engineering and Computer Science, Queen Mary University of London",
-
+			technologies: "Python, TypeScript, Angular, Node.js, microservices, event-driven and workflow distributed systems, Docker, JSON-LD, XML, RDF, OWL, Linked Data, SPARQL, Triple Stores, real-time platforms",
 		},
 		{
 			dates: "2017",
-			position: "Postdoctoral Level Position",
-			activities: "Federated Databases - Database Mining Group",
+			position: "System Architect and core developer - Postdoctoral Level Position",
+			activities: "Federated Databases - Database Mining Group, Knowledge Representation and Reasoning, Data Protection in Healthcare",
 			employer: "Umeå University, Sweden",
-
+			technologies: "Python, TypeScript, Angular, Node.js, GDPR and data protection healthcare data, database federation, data mining, SPARQL, RDF, OWL, Linked Data, Triple Stores",
 		},
 		{
 			dates: "2015 - 2016",
 			position: "R&D on EarthCube project (US NSF funded)",
-			activities: "Designing model ontologies and developing tool for describing models ",
-			employer: "Research for INSTAAR, University of Colorado — Boulder",
-
+			activities: "Designing model ontologies and developing tool for describing models",
+			employer: "Research for INSTAAR, University of Colorado — Boulder, USA",
+			technologies: "TypeScript, Angular, Node.js, XML, RDF, OWL, Linked Data, SPARQL, Triple Stores",
 		},
 		{
 			dates: "2016-to date",
 			position: "CEO, Co-Founder",
 			activities: "an NGO assembled around the motto - Science and Art for Humanity and Culture",
 			employer: "ChaOS, NGO",
-
+			technologies: "Research, ML/AI, Social processes, Cultural and Heritage Protection, TypeScript, Python, Angular, Vue, React, Node.js, Nest.js, microservices, event-driven and workflow distributed systems, podman, Kubernetes, OpenStack",
 		},
 		{
 			dates: "2011 - 2014",
@@ -99,82 +154,332 @@
 			activities: "Scientific Journalist",
 			sector: "Research Editor",
 			employer: "InfoM",
+			technologies: "Research & Journalism, Technology, Society, Culture, Social Media, Social Networks, Social Processes, Collective Intelligence",
 		},
 		{
 			dates: "2011",
 			position: "R&D",
 			activities: "1)	NUI (Natural User Interface) interaction with 3D virtual space; navigation, manipulation, presentation, 2) NUI interaction with audio and graphic visualization, for children with special needs, 3) Camera Motion Detection Interaction",
 			employer: "ITERA GAZETTE",
+			technologies: "C#, Java, Flash, ActionScript 3, Flex, XML, XSD, XSLT, JSON, JavaScript, CMSes (Umbraco, Joomla), HTML5, CSS3",
 		},
 		{
-			dates: "2010",
+			dates: "2009-2010",
 			position: "Senior Developer (Social-media and online games and gamification)",
 			activities: "R&D",
 			employer: "Visual Funk",
-
+			technologies: "Flash, ActionScript 3, Flex, XML, XSD, XSLT, JSON, JavaScript, CMSes (Joomla, Wordpress), HTML5, CSS3",
 		},
-		{
-			dates: "2010",
-			position: "R&D",
-			activities: "GeoSocial Micro blogging, OpenSocial protocols",
-			employer: "HeadsWare, Serbia; MagicWand Solutions, Serbia",
-			sector: "GeoSocial, Android OS",
+		// {
+		// 	dates: "2010",
+		// 	position: "R&D",
+		// 	activities: "GeoSocial Micro blogging, OpenSocial protocols",
+		// 	employer: "HeadsWare, Serbia; MagicWand Solutions, Serbia",
+		// 	sector: "GeoSocial, Android OS",
+		// },
+		// {
+		// 	dates: "2008",
+		// 	position: "R&D",
+		// 	activities: "TopicMaps, Spring algorithms, relevancies, semantics",
+		// 	employer: "HeadsWare, Serbia; KnowledgeFederation, Oslo University, Norway",
 
-		},
-		{
-			dates: "2008",
-			position: "R&D",
-			activities: "TopicMaps, Spring algorithms, relevancies, semantics",
-			employer: "HeadsWare, Serbia; KnowledgeFederation, Oslo University, Norway",
-
-		},
+		// },
 		{
 			dates: "July 2007 - August 2008",
 			position: "R&D",
 			activities: "Protocols/Cryptography, NDIS IM drivers, Windows Mobile, UML modeling",
 			employer: "Birdstep Technology ASA, Oslo, Norway",
 			sector: "Connection Manager Development (Windows Desktop & PDA)",
-
+			technologies: "C++, C#, Windows Mobile and Desktop, kernel drivers, protocols, cryptography, UML modeling",
 		},
-		{
-			dates: "March 2006 onwards",
-			position: "Part-time researcher",
-			activities: "Identifying paradigms, developing models",
-			employer: "KnowledgeFederation, Oslo University, Norway",
-			sector: "Knowledge representation, collection, and organisation",
-
-		},
+		// {
+		// 	dates: "March 2006 onwards",
+		// 	position: "Part-time researcher",
+		// 	activities: "Identifying paradigms, developing models",
+		// 	employer: "KnowledgeFederation, Oslo University, Norway",
+		// 	sector: "Knowledge representation, collection, and organisation",
+		// },
 		{
 			dates: "January 2007 - July 2007",
-			position: "Architect manager, R&D",
+			position: "System Architect, R&D",
 			activities: "Seamless switchover GSM/VoIP on PDA devices",
 			employer: "VoiceRoaming ASA, Oslo, Norway",
-			sector: "GSM/VoIP",
-
+			technologies: "C#, C++, Windows Mobile, GSM/VoIP, protocols, cryptography, UML modeling",
 		},
 		{
 			dates: "2006",
-			position: "Part-time Researcher",
-			activities: "Introducing to FOREX theory and applications, Neural Network prediction appliance",
-			employer: "Not permitted to disclose",
-			sector: "Automated FOREX",
+			position: "System Architect, R&D",
+			activities: "GPS Navigation on PDA devices",
+			employer: "Vlatacom, Belgrade, Serbia",
+			technologies: "C#, C++, Windows Mobile, GPS, navigation algorithms",
+		},
+		// {
+		// 	dates: "2006",
+		// 	position: "Part-time Researcher",
+		// 	activities: "Introducing to FOREX theory and applications, Neural Network prediction appliance",
+		// 	employer: "Not permitted to disclose",
+		// 	sector: "Automated FOREX",
 
+		// },
+		// {
+		// 	dates: "July 2004 - November 2004",
+		// 	position: "Research Projects Manager, Researcher",
+		// 	activities: "Leading young researchers of Belgrade University, Researching in few areas: OCR, Data conceptualization, semantic and ontology",
+		// 	employer: "IPSI, Belgrade, Serbia",
+		// 	sector: "Research Outsourcing",
+
+		// },
+		// {
+		// 	dates: "January 2004 - December 2004",
+		// 	position: "Project Manager, Researcher",
+		// 	activities: "fast file hash management, digitally sealed file system",
+		// 	sector: "Researches in File Systems",
+		// 	employer: "StorageTek, USA (lately acquired by Sun Microsystems)",
+		// }
+	],
+	academic_publications: [
+		{
+			dates: "Accepted",
+			title: "Rudan, S., Rudan, S., Karabeg, D., Rakovic, D. ”Reflections on Tesla’s creativity and potential for its replication as an online space for collective creativity and scientific dialogue“, Phlogiston, Journal for the History of Science, 2019"
 		},
 		{
-			dates: "July 2004 - November 2004",
-			position: "Research Projects Manager, Researcher",
-			activities: "Leading young researchers of Belgrade University, Researching in few areas: OCR, Data conceptualization, semantic and ontology",
-			employer: "IPSI, Belgrade, Serbia",
-			sector: "Research Outsourcing",
-
+			dates: "In preparation",
+			title: "Miguel Ceriania,Fabio Viola, Saša Rudan, Francesco Antoniazzi, Mathieu Barthet, György Fazekas, “Building an Audio Content Ecosystem via Ontology-Mediated Integration of Heterogeneous Content Providers”"
 		},
 		{
-			dates: "January 2004 - December 2004",
-			position: "Project Manager, Researcher",
-			activities: "fast file hash management, digitally sealed file system",
-			sector: "Researches in File Systems",
-			employer: "StorageTek, USA (lately acquired by Sun Microsystems)",
-		}
+			dates: "In preparation",
+			title: "Rudan, Saša, and Eugenia Kelbert. “Bukvik: A Literary Scholars' Environment for Running Visualized, Social-Augmented, Collaborative Research”"
+		},
+		{
+			dates: "In preparation",
+			title: "Kelbert, Eugenia, and Saša Rudan. “Use of Digital Humanities Techniques in the Context of (Self–)Translation and Bilingual Writing” "
+		},
+		{
+			dates: "In preparation",
+			title: "Kelbert, Eugenia, and Saša Rudan. “Bilingual Nabokov: Comparing Stylistic Profiles” "
+		},
+		{
+			dates: "In preparation",
+			title: "Rudan, Saša, and Eugenia Kelbert. “Society of Words: A Structuralist Approach to Close Distant Reading”"
+		},
+		// {
+		// 	dates: "In preparation",
+		// 	title: "Rudan, S., Peckham, S., Kelbert, A., “MCM: An ontological approach in designing and describing geophysical simulation models” "
+		// },
+		// {
+		// 	dates: "In preparation",
+		// 	title: "Rudan, S., Rudan, S., Peckham, S., Kelbert, A., “MCM tool and Colabo.Space as an approach for a collective work on designing geophysical models”"
+		// },
+		{
+			dates: "2023", 
+			title: 'Rudan, Sasha Mile, et al. "Augmenting and informing the translation process through workflow-enabled CALT tools." Computer-assisted literary translation. Routledge, 2023. 258-281.'
+		},
+		{
+			dates: "2021",
+			title: 'Rudan, Sasha Mile, et al. "Colabo. Space-Participatory Platform for Evolving Research and Publishing Workflows." International Conference on Theory and Practice of Digital Libraries. Springer, Cham, 2021.'
+		},
+		{
+			dates: "2021",
+			title: 'Rudan, Sasha Mile, Lazar Kovacevic, and Sinisha Rudan. "Democracy Framework, ColaboFlow, and Wikipedia-Governing Face-to-virtual Systems and Processes According to Democratic and Ethical Principles." 2021 Eighth International Conference on eDemocracy & eGovernment (ICEDEG). IEEE, 2021.'
+		},
+		{
+			dates: "2021",
+			title: 'Rudan, Sasha Mile, et al. "Colabo. Space-Participatory Platform for Evolving Research and Publishing Workflows." International Conference on Theory and Practice of Digital Libraries. Springer, Cham, 2021.'
+		},
+		{
+			dates: "2021",
+			title: 'Rudan, Sasha Mile, Sinisa Rudan, and Birger Møller-Pedersen. "Extending BPM (N) to Support Face-to-Virtual (F2V) Process Modeling." MODELSWARD. 2021.'
+		},
+		{
+			dates: "2020",
+			title: "Sasha Mile Rudan, Eugenia Kelbert, Lazar Kovacevic, Sinisa Rudan, Matthew Reynolds: Twin Talk: Bukvik+LitTerra+Colabo.Space - An Example of the DH Collaboration Across Disciplines, Languages, and Style. TwinTalks@DH/DHN 2020: 15-29"
+		},
+		{
+			dates: "2019",
+			title: "Sasha Mile Rudan, Lazar Kovacevic, Eugenia Kelbert and Sinisa Rudan, “LitTerra, by augmenting literature with meaningful connections, turns readers into explorers and researchers”, ELO2019, Cork"
+		},
+		{
+			dates: "2019",
+			title: "Sinisa Rudan and Sasha Mile Rudan, “CoLaboArthon - Developing Collaborative Art Worldwide”, ELO2019, Cork"
+		},
+		{
+			dates: "2019",
+			title: "Sinisha Rudan, Sasha Rudan, Lazar Kovacevic, Eugenia Kelbert, “Poetry on the Road: An Intercultural And Multidisciplinary IT-Augmented Dialogue on the Topic of Refugees and Migrants”, Comparing e/migrations: Tradition – (Post)memory – Translingualism (2019), Toruń"
+		},
+		{
+			dates: "2018",
+			title: "Sinisa Rudan, Sasha Rudan, “Augmentation Of Creative Community Practices By Socio-technical Ecosystems (colabo.space: Tools And Methodologies Supporting Colaboarthon)”, PPLG18, Thessaloniki"
+		},
+		{
+			dates: "2018",
+			title: "Sinisa Rudan, Sasha Rudan, Tamara Nikolic Maksic , “Colaboarthon - Inclusive Play - Developing Collective Awareness And Empathy (from Brainstorming To Art)”, PPLG18, Thessaloniki"
+		},
+		{
+			dates: "2015",
+			title: "Tasovac, T., Sasa Rudan, and Sinisa Rudan, “Developing Morpho-SLaWS: An API for the Morphosyntactic Annotation of the Serbian Language”, In: Systems and Frameworks for Computational Morphology (SFCM 2015), Mahlow, C., Piotrowski, M. (Eds.), Springer, 137-147"
+		},
+		{
+			dates: "2015",
+			title: "Rudan, S., Rudan, S., Karabeg, D., “Reprogramming anthropocene - crowdsourced governance of trans-technical systems” (ISSS 2015), Vol 1, No 1 (2015)"
+		},
+		{
+			dates: "2014",
+			title: "Rudan, Sasha, Rudan, Sinisa, “Democracy Framework Politics & Leadership in Online Communities” (ICEDEG 2014), Terán, L., Meier, A. (eds.), IEEE Computer Society, University of Fribourg, pp. 67-72, 2014"
+		},
+		{
+			dates: "2013",
+			title: "Rudan, S., Karabeg, D., and Johansen, A. M., “DataTalks: A Unified Knowledge Pool in SaaS and Mashup Systems”, ECKM 2013 14th European Conference on Knowledge Management, 2 Volume set, Janiūnaitė, B., Pundziene, A., Petraite, M. (eds.)., Vol. 2, pp. 926-932"
+		},
+		{
+			dates: "2008",
+			title: "“Quality, Relevance and Importance in Information Retrieval with Fuzzy Semantic Networks”, by Lachica, R., Karabeg, D. and Rudan, S.. Proceedings of the TMRA, 2008. "
+		},
+		{
+			dates: "2008",
+			title: "“SocioTM – Relevancies, Collaboration, and Socio-knowledge in Topic Maps”, Rudan, S. & Rudan, S. In: Subject-centric computing. Fourth International Conference on Topic Maps Research and Applications (TMRA 2008), Maicher, L.; Garshol, L. M. (eds.), Leipziger Beiträge zur Informatik: XII, 2008  "
+		},
+		{
+			dates: "2006",
+			title: "Rudan, S., Kovacevic, A., Babovic, Z., Jovic, D., Milutinovic, V., Milligan, C., “One Approach of Efficient Management of Zillion Signatures”, Transactions on Internet Research, 2006, Vol. 2, No. 2 "
+		},
+		{
+			dates: "2005",
+			title: "Rudan, S., Kovacevic, A., Milligan, C.A., Milutinovic, V. M., “Data Assurance in a Conventional File Systems (HICSS 2005), IEEE Computer Society 2005"
+		},
+	],
+	academic_conferences: [
+		{
+			dates: 2025,
+			title: '“A hybrid approach in the close and distant reading of Ibsen’s plays in the light of the characters’ stylometric profiles” (with S. Rudan and L. Timmermann), DHNB2024, 27-31 May, Reykjavik, Iceland'
+		},
+		{
+			dates: 2021,
+			title: '“Poetry on the Road - An Experiment in Multidisciplinary Co-creation on the Topic of Refugees and Migrants,” Approaches to Migration, Language & Identity (AMLI 2021), 9-11 June 2021, Sussex, UK (virtual)'
+		},
+		{
+			dates: 2020,
+			title: '“Comparative Study of Jane Eyre Translations into the Languages of Former Yugoslavia and Russian: A Digital Humanities Augmented Close Reading Approach,” (with Sasha Rudan and Matthew Reynolds), ASEEES, 5-8 Nov 2020, Washington DC (virtual)'
+		},
+		{
+			dates: 2020,
+			title: 'Twin Talk: Bukvik+LitTerra+Colabo.Space - An Example of DH Collaboration Across Disciplines, Languages, and Style, TwinTalks DHN, 20 October 2020, Riga (virtual)'
+		},
+
+		{
+			dates: 2021,
+			title: '“Bukvik and LitTerra Infrastructures Tackling Multiple Translations of ‘Jane Eyre,’” CALT, 14 May 2021, Swansea (virtual)'
+		},
+		{
+			dates: 2021,
+			title: '“AnnoTata – Support for Multi-annotations and Structural Dialogue as a Foundation of the Online Collaborative Research and Education on the LitTerra Platform,” 14-16 April 2021, Digital Transformation in Culture and Education, 2021'
+		},
+		{
+			dates: "September 2021",
+			title: 'Retracing Connections Between Byzantine Storyworlds and Declarative DH Eco-systems, Sasha Rudan, Michael Dunn, Christian Høgel, Sinisha Rudan, Andrija Sagic, Lazar Kovacevic, ICBMGS, Tbilisi, Georgia, 2021'
+		}, {
+			dates: "June 2021",
+			title: 'Poetry on the Road - An Experiment in Multidisciplinary Co-creation on the Topic of Refugees and Migrants, Sasha Rudan, Sinisha Rudan, Dimitrije Bukvic, Bob Holman & Eugenia Kelbert, AMLI’21, Brighton, UK, 2021'
+		}, {
+			dates: "May 2021",
+			title: 'Bukvik and LitTerra Infrastructures Tackling Multiple Translations of “Jane Eyre”, Sasha Rudan, Eugenia Kelbert, Sinisha Rudan, Lazar Kovacevic & Matthew Reynolds, CALT’21, Swansea, UK, 2021'
+		}, {
+			dates: "April 2021",
+			title: 'AnnoTata – Support for Multi-annotations and Structural Dialogue as a Foundation of the Online Collaborative Research and Education on the LitTerra Platform, Sasha Rudan, Sinisha Rudan, Eugenia Kelbert, Matthew Reynolds, DTCE’21, Belgrade, Serbia, 2021'
+		}, {
+			dates: "November 2020",
+			title: 'Comparative Study of Jane Eyre Translations into the Languages of Former Yugoslavia and Russian – A Digital Humanities augmented Close Reading Approach, Sasha Rudan, Sinisha Rudan, Lazar Kovacevic, Eugenia Kelbert, Matthew Reynolds, ASEEES’20, Virtual, 2020'
+		}, {
+			dates: "July 2016",
+			title: '"CollaboFramework - a framework for sustaining socio-ecological systems through dialogical knowledge and action space", Sasha Mile Rudan, Sinisha Rudan, Dino Karabeg, ISSS\'16, Boulder, CA, USA, 2016'
+		}, {
+			dates: "August 2015",
+			title: '"Reprogramming anthropocene - crowdsourced governance of trans-technical systems", Sasha Mile Rudan, Sinisha Rudan, Dino Karabeg, ISSS\'15, Berlin, Germany, 2015'
+		}, {
+			dates: "August 2015",
+			title: '“Idioms Usage Patterns in Bilingual Writing: An Example of Qualitatively Augmented Quantitative Analysis” (with Eugenia Kelbert), August 2015, IX World Congress of ICCEES, Chiba, Japan'
+		}, {
+			dates: "June 2015",
+			title: '“Visualizing Dynamics of Narrative in Fiction” (with Eugenia Kelbert), 15-18 June 2015, SCALE, Malta'
+		}, {
+			dates: "January 2015",
+			title: '"Bukvik: A Literary Scholars\' Environment for Running Visualized, Social-Augmented, Collaborative Research," (with Eugenia Kelbert), MLA\'15, Vancouver, Canada, 2015'
+		}, {
+			dates: "July 2014",
+			title: '"Analysis of a Social Activities Recommendation Model", Sasha Mile Rudan, Sinisha Rudan, Aleksandar Cikaric, ECSM, Brighton, UK, 2014'
+		}, {
+			dates: "April 2014",
+			title: '"Democracy Framework Politics & Leadership in Online Communities", Sasha Mile Rudan, Sinisha Rudan, ICEDEG, Quito, Ecuador, 2014'
+		}, {
+			dates: "January 2014",
+			title: '“Computational Tracking of Cross-Cultural and Cross-Lingual Markers in Translation Corpora,” (with Eugenia Kelbert), MLA\'14, Chicago, US, 2014'
+		}, {
+			dates: "October 2014",
+			title: '"CharityNet - Online Crowd-Charity System Driven by Social Psychology and Performed through Social Dissemination of Charity", Sinisa Rudan, Sasha Mile Rudan, Bojana Radovanovic, GHTC\'14, San Jose, CA, USA, 2014'
+		}, {
+			dates: "January 2014",
+			title: '"Computational Tracking of Cross-Cultural and Cross-Lingual Markers in Translation Corpora," Eugenia Kelbert, Yale Univ.; Saša Mile Rudan, Oslo Univ., MLA\'14 Conference, Chicago, USA, 2014'
+		}, {
+			dates: "September 2013",
+			title: '"Friendship Growth and Management Driven by Social Processes And Activities; Measurements, Stability And Behavior Cascading" (poster), Sasha Mile Rudan, Sinisha Rudan, ECCS13, Barcelona, Spain, 2013'
+		}, {
+			dates: "September 2013",
+			title: '"DataTalks: A Unified Knowledge Pool in SaaS and Mashup Systems, "'
+		}, {
+			dates: "September 2013",
+			title: '"DataTalks: A Unified Knowledge Pool in SaaS and Mashup Systems," Sasha Mile Rudan, Oslo U; Dino Karabeg, Oslo U; Alf Martin Johansen, Induct AS, ECKM\'13 Conference, Kaunas, Lithuania, 2013'
+		}, {
+			dates: "September 2012",
+			title: '"Applications of Semantic and Conceptual Analysis of L2 Writers: Nabokov, Brodsky and Stylistic Consequences of Bilingual Cognition," Eugenia Kelbert, Sasa Rudan, William Teahan, SCLA Conference, Zagreb, Croatia, 2012'
+		}, {
+			dates: "June  2012",
+			title: '"An Innovation Ecosystem for Good Journalism," Karabeg, D., Fung, M.L., Herrera, R., Price, D., Rudan, S., Sanguesa, R., Xaxas, X.M., New Political Communication and EU, Dubrovnik, Croatia, June 1, 2012.'
+		}, {
+			dates: "October 2008",
+			title: '"SocioTM – Relevancies, Collaboration, and Socio-knowledge in Topic Maps," Sasa Rudan, Sinisa Rudan, TMRA Conference, Leipzig, Germany, 2008'
+		}, {
+			dates: "October 2008",
+			title: '"Quality, Relevance and Importance in Information Retrieval with Fuzzy Semantic Networks," R. Lachica, D. Karabeg, and S. Rudan, TMRA Conference, Leipzig, Germany, 2008'
+		}, {
+			dates: "June 2004, January 2005",
+			title: '"Data Assurance in a Conventional File System," S. Rudan, A. Kovacevic, V. Milutinovic, C. Milligan, and S. Selkirk, Proceedings of the International HICSS-38 Conference, Hawaii, USA, 2005, Proceedings of the International IPSI-2004 Conference, Studenica, Serbia, 2004'
+		}, {
+			dates: "Autumn 2006",
+			title: '“Fast File Existence Checking in Archiving System”, S.Tomazic, S.Rudan (submitted to the IEEE Transactions on Knowledge and Data Engineering),  based on paper “The Solution for Distributed Management of Digital Signatures in Highly-loaded SAN Systems”'
+		}, {
+			dates: "October 2004",
+			title: '"Semantic Metadata Standards," S. Rudan, A. Kovacevic, V. Milutinovic, Proceedings of the International IPSI-2004 Conference, Sveti Stefan, Serbia and Montenegro'
+		},
+	],
+
+	academic_invitations: [
+		{
+			dates: "2018",
+			title: "“Visualizing Mademoiselle O's Emigration Trajectory: a Stylometric Approach to Nabokov”, Stockholm University, 2 March 2018, Stockholm, Sweden",
+		}, {
+			dates: "2017",
+			title: "“Systemic innovation and Collaborative augmentation of Journalism”, Media polygon, Tyumen, Russia, April, 2017",
+		}, {
+			dates: "2017",
+			title: '"Augmenting Structural Democratic Dialogue with Online and Offline Collaborative Tools", Future Worlds Center, Nicosia, Cyprus, June, 2017',
+		}, {
+			dates: "2016",
+			title: "“Bukvik and Cross-Lingual Stylistic Comparison” (with Eugenia Kelbert), Max Planck Institute for Empirical Aesthetics, 14 September 2016, Frankfurt-am-Main, Germany",
+		}, {
+			dates: "2014",
+			title: "“Acquiring a Second Language Literature” (with Eugenia Kelbert), 25 November 2014, Centre for Research on Bilingualism, Stockholm University, Stockholm, Sweden",
+		}, {
+			dates: "2014",
+			title: "“Use of Digital Humanities Techniques in the Context of (Self–)translation and Bilingual Writers” (with Eugenia Kelbert), Encompassing Comparative Literature: Theory, Interpretation, Perspective, 24-26 October 2014, Belgrade, Serbia",
+		}, {
+			dates: "2014",
+			title: "“Bukvik: an Experiment in Quantitative Literary Analysis” (with Eugenia Kelbert), 17 September 2014, Faculty of Communications, Media and Design, Higher School of Economics, Moscow, Russia",
+		}, {
+			dates: "2014",
+			title: "“Writing Outside Russian: An Experiment in Quantitative Analysis” (with Eugenia Kelbert), Translation in Russian Contexts, 3-7 June 2014, Uppsala, Sweden",
+		}, {
+			dates: "2013",
+			title: 'Keynote speaker, "Project LitTerra: New Travel Through Augmented Digital Book (the next step after digitization)," Sasha Mile Rudan, Oslo U; Eugenia Kelbert, Yale U; Lazar Kovacevic, Inverudio Inc; Sinisa Rudan, Belgrade U; Tamara Butigan, Serbian National Library; Miroljub Stojanovic, Serbian National Library. NCD\'13 Conference, Belgrade, Serbia, November  2013.',
+		},
 	],
 	trainings: [{
 			dates: "July 2016",
@@ -213,36 +518,50 @@
 	],
 	skills: {
 		social: [
-			"Good in conversation and spreading a relaxed atmosphere, helping people I am managing feel group responsibilities and follow leadership",
-			"Snow/water skiing, cycling, inline-skating, dancing, fishing, yoga, capoera, boxing",
+			"Good in conversation and spreading a relaxed atmosphere, helping people I am managing or working with, feel group responsibilities and follow leadership",
+			"Snow/water skiing, cycling, inline-skating, dancing, fishing, yoga, capoera",
 		],
-		organizational: ["Project management, negotiation, team building, brainstorming management"],
+		organizational: [
+			"Project management, negotiation, team building, brainstorming management",
+			"Project management tools, Issue tracker, CRM tools, e-business-commerce tools",
+			"UML modeling, BPMN modeling, system architecture, system design, customer journey mapping, user stories, personas"
+			],
 		computer: {
 			technologies: [
-				"Social Media Marketing (Facebook, Twitter, Youtube, blogs, OpenSocial)",
-				"Project management tools, Issue tracker, CRM tools, e-business-commerce tools",
-				"Knowledge/data representation, XML, XSD, XSLT,  RDF",
-				"Internet protocols (all OSI layers, theory & development)",
-				"Neural Networks, Cryptography (Theory, development), Hardware, VHDL",
-				"Flash, HTML, CSS, DHTML, DOM, JavaScript, AJAX",
-				"Computer Graphic (2D, 3D, Fractals, 3D Studio, Swift3D)",
-				"VoIP (Theory, development (PDA), Asterisk)",
-				"System Windows programming, System Linux/UNIX programming ",
+				"Frontend frameworks: Vue, React, Angular, Bootstrap, Ionic, jQuery, vanilla JS",
+				"Backend frameworks: Node.js, Nest.js, Express.js, Django, Flask",
+				"DevOps/Containerization: docker, docker swarm, OpenFaaS, podman (primarily root-less), Kubernetes (OpenStack, OpenShift, Helm), AWS, GCP, Azure, Heroku",
+				"Asynchronous programming: event-driven systems, WebSockets, Socket.io, message brokers (RabbitMQ), RxJS, workflow systems (ColaboFlow, Apache Airflow, Prefect), microservices, AJAX",
+				"Databases: PostgreSQL, MySQL, MongoDB, Redis, SQLite, Neo4j, Elasticsearch, BigQuery, Triple Stores (Blazegraph)", 
+				"AI/ML: RAG, agentic frameworks, TensorFlow, PyTorch, scikit-learn, OpenAI, HuggingFace, LLMs, Transformers, audio and video processing, NLP/NLU, stylometric analysis, semantic analysis, knowledge representation",
+				"Testing frameworks: Jest, Mocha, Jasmine, Cypress, Selenium, PyTest, Puppeteer, Playwright, Vitest",
+				"Deployment workflows: CI/CD, Github Actions, NX, Lerna, monorepos, multi-monorepos, Ansible",
+				"Virtualization: OpenStack, VMWare, VirtualBox",
+				"Knowledge/data representation: XML, XSD, XSLT,  RDF, OWL, JSON-LD, SPARQL, Topic Maps, Linked Data",
+				// "Neural Networks, Cryptography (Theory, development), Hardware, VHDL",
 				"Linux administration, Windows administration, (W)LAN network administration",
 				"WEB administration: Apache, PHP, MySQL, IIS, TomCat",
+				// "Flash, HTML, CSS, DHTML, DOM, JavaScript, AJAX",
+				"VoIP (Theory, development (PDA), Asterisk)",
+				// "Social Media Marketing (Facebook, Twitter, Youtube, blogs, OpenSocial)",
 			],
 			"programmingLanguages": [
 
-				"Python, C(++), C#, JavaScript (OOP, MVC, Backend (node.js))",
-				"ActionScript 3, Java, Objective-C, ASM, Modula, Prolog",
-				"Perl, Linux shell scripts, PHP",
+				"Python, TypeScript/JavaScript, C(++), C#, (OOP, MVC)",
+				"Java, Objective-C, ASM, ActionScript 3, Modula, Prolog",
+				"Linux shell scripts, Perl, PHP",
 			],
-			technical: "Hardware knowledge, network administration, experienced with mechanical repairing",
+			technical: [
+				"Internet protocols (all OSI layers, theory & development)",
+				"System Windows programming, System Linux/UNIX programming ",
+				"Hardware knowledge, microcontrollers (arduino, esp32), network administration",
+			]
 		},
 		artistic: [
-			"Graphic/WEB/GUI Design (beside normal activities, enjoy designing logos)",
-			"Writing poetry and short stories (published in collections, won prizes)",
-			"Drawing (1 prize, district-level, 1992)",
+			"UX design; Design (Figma, Balsamiq, Adobe XD, Zeplin) -> code, CSS/SASS, SVG, Google Material",
+			"Visualization: D3, Plotly, Computer Graphic (2D, 3D, Fractals, 3D Studio, Swift3D)",
+			// "Graphic/WEB/GUI Design (beside normal activities, designing logos)",
+			"Writing poetry and short stories, drawing (published in collections, won prizes)",
 		],
 		other: ["Practicing guitar and Serbian “flute” (frula), dancing, capoeira, snowboarding, tennis, slam/active poetry"],
 	},
