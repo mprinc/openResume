@@ -17,9 +17,11 @@
 			width: "250px",
 		},],
 		first: "Sasha",
-		firstAlternatives: "Саша, Saša",
-		last: "Rudan",
-		lastAlternatives: "Рудан, Rudan",
+		// firstAlternatives: "Саша, Saša",
+		firstAlternatives: "Saša",
+		last: "Rudan Kelbert",
+		// lastAlternatives: "Рудан, Rudan",
+		lastAlternatives: "Rudan",
 		address: {
 			street: "100 Swafield St",
 			street2: "Clover Hill",
@@ -30,22 +32,27 @@
 		phones: {
 			mobile: [
 				"+381 64 31 000 51, (Serbia)",
+				"+385 998 313 172, (Croatia)",
 				"+44 7444481558, (UK)", 
 			],
 		},
 		email: {
-			personal: ["mprinc@gmail.com", "sasha.rudan@gmail.com"],
+			personal: [
+				// "mprinc@gmail.com", 
+				"sasha.rudan@gmail.com"
+			],
 			work: ["sasharu@uio.no", "sasha.rudan@lingfil.uu.se"],
 		},
 		nationalities: ["Serbian", "Croatian"],
 		birth: "04.06.1978",
 		gender: "Male",
 	},
-	education: [{
+	education: [
+		{
 			dates: "Defense expected by 2026",
 			title: "PhD in Computer Science (to be defended)",
 			institution: "University of Oslo, Oslo, Norway",
-			subjects: "Knowledge Federation, Socio-technical system modelling, collective intelligence,  social-processes optimization",
+			subjects: "Socio-technical system modelling, collective intelligence,  social-processes optimization, Knowledge Federation",
 		},
 		{
 			dates: "November 2004",
@@ -60,10 +67,37 @@
 			subjects: "Data structures and algorithms, DB, OS (multitasking, multithreading, IPC), compilers, VHDL design, mathematics (highly advanced, 5 courses), physics (highly advanced), electronic (highly advanced), telecommunications (highly advanced)",
 		}
 	],
+	work_summary: {
+		general: {
+			title: "Green Tech roles",
+			description: "I had numerous roles in the green tech sector as someone who is passionate about the environment and sustainability, either co-organizer, co-founder or socio-/tech-adviser. Here are the most significant ones:",
+			// не користи се још
+			expertiseTitle: "Sasha Rudan, MSC, PhD Candidate",
+			expertise: "PhD research on collective intelligence and AI-augmentation of socio-technical systems and processes, with an additional practice and focus on the green tech sector, socio-technical entrepreneur.",
+		},
+		positions: [
+			{
+				position: "Co-founder of WasteMatch App/Startup",
+				activities: "I work on co-designing a solution for a gamified cleanTech (crowdsourced market + infrastructure for waste management), working on the business model, customer analysis, and socio-technical design and architecture of the solution",
+			},
+			{
+				position: "Co-founder of an Award-winning eduGame",
+				activities: "Digital + offline eduGame feat. Sustainable Dev Goals and Environmentalism Embodiment. Supports team \"playing\" (solving) over a board (map) sustainability challenges of specific region, augmented with a mobile app that we have co-created",
+			},
+			{
+				position: "Co-organized Oslo Climathon",
+				activities: "I have co-organized Oslo Climathon, a hackathon focused on developing solutions for climate change and sustainability challenges in the city of Oslo. This involved coordinating with local stakeholders, recruiting participants, and facilitating the event to generate innovative ideas and projects addressing environmental issues.",
+			},
+			{
+				position: "Co-organized Belgrade Climathon",
+				activities: "I have co-organized Belgrade Climathon over several years, a hackathon focused on developing solutions for climate change and sustainability challenges in the city of Belgrade.",
+			},
+		],
+	},
 	work: [
 		{
-			dates: "2024-2025",
-			position: "Technical Product Owner, System Architect, and partially a core developer",
+			dates: "2023-2025",
+			position: "Centre for Ibsen Studies - Technical Product Owner, System Architect, and partially a core developer",
 			activities: '(i) **features and grants** - identifying needs and implementing DH infrastructure for inter-disciplinary research on Henrik Ibsen texts, writing grant applications, and coordinating with partners, (ii) **infrastructure** - interconnecting, harmonizing, and refactoring a highly heterogeneous infrastructure, modernizing (refactoring PHP+Perl+Python+Java => TypeScript, facsimiles+mediastore, moving to podman+Kubernetes) (iii) - **TEI/XML** - TEI/XML corpus management, XSLT, xQuery, ExistDb, Cocoon, Saxonica (iv) **AI** - integrating gen-AI, content interpretation, and visualization tools, (v) **AI & Creativity** implementing an AI-generative "jamming" platform for evolving and transforming literary texts, and fusing with multimedia, (vi)**automation** - workflows, data processing, content scraping and synchronizing, proxy/tunneling ',
 			employer: "Oslo University, Department of Linguistics and Scandinavian Studies, https://www.hf.uio.no/is/english/",
 			technologies: "Python, TypeScript, Vue, Node.js, Nest.js, XML, XSLT, XQuery, Elasticsearch, RAG, GenAI, Perl, PHP, microservices, event-driven and workflow distributed systems, Scraping, ETL, OpenStack, OpenShift, Kubernetes, Docker, podman",
@@ -73,35 +107,35 @@
 		},
 		{
 			dates: "2023-2024",
-			position: "System Architect and core developer",
-			activities: "Developing an AI augmented platform and AI processing workflow (pipeline) for video processing, analysis, media and meta extraction, and (re)generation, managing AWS infrastructure, load balancing, scaling, microservices, and React frontend, AWS management. Customer analysis (Google Analytics, Google Data Studio, BigQuery, user traction, and visualization)",
+			position: "Terra AI - System Architect and core developer",
+			activities: "Developing an AI augmented platform and AI processing workflow (pipeline) for video processing, analysis, media and meta extraction, objects recognition, and (re)generation, managing AWS infrastructure, load balancing, scaling, microservices, and React frontend, AWS management. Customer analysis (Google Analytics, Google Data Studio, BigQuery, user traction, and visualization)",
 			employer: "Terra AI, acquired by Pictory, https://pictory.ai/",
-			technologies: "Python, Django, TypeScript, React, Node.js, BigQuery, Google Data Studio, microservices, event-driven and workflow distributed systems, ML/AI (video and sound processing and generation), microservices, AWS, CI/CD",
+			technologies: "Python, Django, Celery, TypeScript, React, Node.js, BigQuery, Google Data Studio, microservices, event-driven and workflow distributed systems, ML/AI (video and sound processing and generation), microservices, AWS, CI/CD",
 			title: "AI flows, AWS, customer analysis, backend scalability, and frontend",
 			thumbnail: "projects/terra.png",
 			skills: ["AI Video Generator", "AWS Application", "React", "Python", "AI-Enhanced Classification", "Published on Jul 15, 2025"],
 		},
 		{
 			dates: "2021-2023",
-			position: "Technical Product Owner and core developer",
-			activities: "Design and implementation of a DH infrastructure for inter-disciplinary research on hagiographic texts",
+			position: "Retracing Connections - Technical Product Owner and core developer",
+			activities: "Design and implementation of a DH infrastructure for inter-disciplinary research on hagiographic texts and advanced workflows scaning of old literature",
 			employer: "Uppsala University, Department of Linguistics and Philology, https://www.lingfil.uu.se/the-department/",
 			technologies: "Python, TypeScript, Vue, Node.js, event-driven and workflow distributed systems, microservices, CI/CD, OpenStack, OpenShift, Kubernetes, Docker",
 		},
 		{
 			dates: "2021",
 			// probably the correct dates are 2021-2022, but I put like this to avoid confusion of dates with the other positions
-			position: "System Architect and core developer",
+			position: "TickerAI - System Architect and core developer",
 			activities: "Implementing an AI/ML/NLP informed Financial Market News Aggregator with unique focus on personalization and user experience. Vue.js frontend, Node.js + Python backend, developed no-code CMS for content management",
 			employer: "TickerAI (https://www.ticker.ai/), Mark Cuban project",
-			technologies: "Angular, TypeScript, Node.js, ElasticSearch, microservices, event-driven and workflow distributed systems, No-code CMS, ansible",
+			technologies: "Vue, TypeScript, Node.js, ElasticSearch, microservices, event-driven and workflow distributed systems, No-code CMS, ansible",
 			title: "Developing backend, search, and frontend features @ TickerAI",
 			thumbnail: "projects/tickerai.png",
 			skills: ["AI Marketplace", "No-Code Development", "Vue.js", "Python", "Node.js"],
 		},
 		{
 			dates: "...",
-			position: "System analyst and designer",
+			position: "Catalyst - System analyst and designer",
 			activities: "Catalyst is an intelligent software tool that empowers one or more experts, who are not programmers, to create knowledge bases in many domains of knowledge quickly. The expert uses Catalyst to create questions, answers, scenarios, rules (IF-THEN-ELSE statements), and decision tables, then associates each answer with one or more rules.\n\nDoing a set of business and deep customer research tasks, from customer journey to personas, toward defining the functionality of ver.2 of the Catalyst tool, focused on the healthcare domain of knowledge.",
 			employer: "InCap Corporation, California, USA",
 			technologies: "System analysis, system design, customer journey mapping, user stories, personas, D3.js, TypeScript",
@@ -112,8 +146,8 @@
 		},
 		{
 			dates: "2019-2021",
-			position: "System Architect and core developer",
-			activities: "Implementing frontend and backend for an AI anti-bias exploratory and negotiation platform",
+			position: "POIETO - System Architect and core developer",
+			activities: "Co-creation of an AI anti-bias exploratory and negotiation platform",
 			employer: "POIETO (https://www.poieto.com/), Feminist AI (https://www.feminist.ai/), NVIDIA Inception Program",
 			technologies: "Angular, TypeScript, Node.js",
 			title: "Frontend, AI bias @ POIETO",
@@ -122,35 +156,35 @@
 		},
 		{
 			dates: "2018-2019",
-			position: "System Architect and core developer - Postdoctoral Level Position",
+			position: "Audio Commons - System Architect and core developer - Postdoctoral Level Position",
 			activities: "Semantic Ontological music information retrieval infrastructure, holistic evaluation, creativity processes evaluation, designing workflow infrastructure",
 			employer: "School of Electronic Engineering and Computer Science, Queen Mary University of London",
 			technologies: "Python, TypeScript, Angular, Node.js, microservices, event-driven and workflow distributed systems, Docker, JSON-LD, XML, RDF, OWL, Linked Data, SPARQL, Triple Stores, real-time platforms",
 		},
 		{
 			dates: "2017",
-			position: "System Architect and core developer - Postdoctoral Level Position",
+			position: "Federated Databases - System Architect and core developer - Postdoctoral Level Position",
 			activities: "Federated Databases - Database Mining Group, Knowledge Representation and Reasoning, Data Protection in Healthcare",
 			employer: "Umeå University, Sweden",
 			technologies: "Python, TypeScript, Angular, Node.js, GDPR and data protection healthcare data, database federation, data mining, SPARQL, RDF, OWL, Linked Data, Triple Stores",
 		},
 		{
 			dates: "2015 - 2016",
-			position: "R&D on EarthCube project (US NSF funded)",
+			position: "INSTAAR - R&D on EarthCube project (US NSF funded)",
 			activities: "Designing model ontologies and developing tool for describing models",
 			employer: "Research for INSTAAR, University of Colorado — Boulder, USA",
 			technologies: "TypeScript, Angular, Node.js, XML, RDF, OWL, Linked Data, SPARQL, Triple Stores",
 		},
 		{
 			dates: "2016-to date",
-			position: "CEO, Co-Founder",
+			position: "ChaOS - CEO, Co-Founder",
 			activities: "an NGO assembled around the motto - Science and Art for Humanity and Culture",
 			employer: "ChaOS, NGO",
 			technologies: "Research, ML/AI, Social processes, Cultural and Heritage Protection, TypeScript, Python, Angular, Vue, React, Node.js, Nest.js, microservices, event-driven and workflow distributed systems, podman, Kubernetes, OpenStack",
 		},
 		{
 			dates: "2011 - 2014",
-			position: "Editor of column on socio-technical systems in Serbian research magazine, InfoM",
+			position: "InfoM - Editor of column on socio-technical systems in Serbian research magazine, InfoM",
 			activities: "Scientific Journalist",
 			sector: "Research Editor",
 			employer: "InfoM",
@@ -158,25 +192,25 @@
 		},
 		{
 			dates: "2011",
-			position: "R&D",
+			position: "ITERA GAZETTE - R&D",
 			activities: "1)	NUI (Natural User Interface) interaction with 3D virtual space; navigation, manipulation, presentation, 2) NUI interaction with audio and graphic visualization, for children with special needs, 3) Camera Motion Detection Interaction",
 			employer: "ITERA GAZETTE",
 			technologies: "C#, Java, Flash, ActionScript 3, Flex, XML, XSD, XSLT, JSON, JavaScript, CMSes (Umbraco, Joomla), HTML5, CSS3",
 		},
 		{
 			dates: "2009-2010",
-			position: "Senior Developer (Social-media and online games and gamification)",
+			position: "Visual Funk - Senior Developer (Social-media and online games and gamification)",
 			activities: "R&D",
 			employer: "Visual Funk",
 			technologies: "Flash, ActionScript 3, Flex, XML, XSD, XSLT, JSON, JavaScript, CMSes (Joomla, Wordpress), HTML5, CSS3",
 		},
-		// {
-		// 	dates: "2010",
-		// 	position: "R&D",
-		// 	activities: "GeoSocial Micro blogging, OpenSocial protocols",
-		// 	employer: "HeadsWare, Serbia; MagicWand Solutions, Serbia",
-		// 	sector: "GeoSocial, Android OS",
-		// },
+		{
+			dates: "2010",
+			position: "R&D",
+			activities: "GeoSocial Micro blogging, OpenSocial protocols",
+			employer: "HeadsWare, Serbia; MagicWand Solutions, Serbia",
+			sector: "GeoSocial, Android OS",
+		},
 		// {
 		// 	dates: "2008",
 		// 	position: "R&D",
@@ -187,7 +221,7 @@
 		{
 			dates: "July 2007 - August 2008",
 			position: "R&D",
-			activities: "Protocols/Cryptography, NDIS IM drivers, Windows Mobile, UML modeling",
+			activities: "Birdstep - Protocols/Cryptography, NDIS IM drivers, Windows Mobile, UML modeling",
 			employer: "Birdstep Technology ASA, Oslo, Norway",
 			sector: "Connection Manager Development (Windows Desktop & PDA)",
 			technologies: "C++, C#, Windows Mobile and Desktop, kernel drivers, protocols, cryptography, UML modeling",
@@ -201,14 +235,14 @@
 		// },
 		{
 			dates: "January 2007 - July 2007",
-			position: "System Architect, R&D",
+			position: "VoiceRoaming - System Architect, R&D",
 			activities: "Seamless switchover GSM/VoIP on PDA devices",
 			employer: "VoiceRoaming ASA, Oslo, Norway",
 			technologies: "C#, C++, Windows Mobile, GSM/VoIP, protocols, cryptography, UML modeling",
 		},
 		{
 			dates: "2006",
-			position: "System Architect, R&D",
+			position: "Vlatacom - System Architect, R&D",
 			activities: "GPS Navigation on PDA devices",
 			employer: "Vlatacom, Belgrade, Serbia",
 			technologies: "C#, C++, Windows Mobile, GPS, navigation algorithms",
