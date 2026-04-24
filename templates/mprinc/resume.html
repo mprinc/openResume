@@ -148,7 +148,8 @@
 
 		<tr>
 			<td class="prop">E-mail(s)</td>
-			<td class="value">work: {{personal.email.work}} </td>
+			<td class="value">personal: {{personal.email.personal}} </td>
+			<!-- <td class="value">work: {{personal.email.work}} </td> -->
 		</tr>
 
 		<tr>
@@ -197,6 +198,31 @@
 			<td class="value">&nbsp;</td>
 		</tr>
 	{{/education}}
+</table>
+
+<h2>{{work_summary.general.title}}</h2>
+
+<div>{{work_summary.general.description}}</div>
+
+<table>
+	{{#work_summary.positions}}
+		<!-- <tr>
+			<td class="prop">Dates</td>
+			<td class="value">{{dates}}</td>
+		</tr> -->
+		<tr>
+			<td class="prop">Occupation or position held</td>
+			<td class="value valueStressed">{{position}}</td>
+		</tr>
+		<tr>
+			<td class="prop">Main activities and responsibilities</td>
+			<td class="value">{{activities}}</td>
+		</tr>
+		<tr>
+			<td class="value">&nbsp;</td>
+			<td class="value">&nbsp;</td>
+		</tr>
+	{{/work_summary.positions}}
 </table>
 
 <h2>Work experience</h2>
