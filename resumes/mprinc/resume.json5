@@ -22,16 +22,23 @@
 		last: "Rudan Kelbert",
 		// lastAlternatives: "Рудан, Rudan",
 		lastAlternatives: "Rudan",
+		// address: {
+		// 	street: "100 Swafield St",
+		// 	street2: "Clover Hill",
+		// 	city: "Norwich",
+		// 	zip: "NR5 9EA",
+		// 	country: "United Kingdom",
+		// },
 		address: {
-			street: "100 Swafield St",
-			street2: "Clover Hill",
-			city: "Norwich",
-			zip: "NR5 9EA",
-			country: "United Kingdom",
+			street: "Sjeničak Lasinjski 172",
+			street2: "",
+			city: "Sjeničak Lasinjski",
+			zip: "47000",
+			country: "Croatia",
 		},
 		phones: {
 			mobile: [
-				"+381 64 31 000 51, (Serbia)",
+				// "+381 64 31 000 51, (Serbia)",
 				"+385 998 313 172, (Croatia)",
 				"+44 7444481558, (UK)", 
 			],
@@ -43,56 +50,56 @@
 			],
 			work: ["sasharu@uio.no", "sasha.rudan@lingfil.uu.se"],
 		},
-		nationalities: ["Serbian", "Croatian"],
-		birth: "04.06.1978",
+		// nationalities: ["Serbian", "Croatian"],
+		// birth: "04.06.1978",
 		gender: "Male",
 	},
 	education: [
 		{
-			dates: "Defense expected by 2026",
+			dates: "Defense expected by 2027",
 			title: "PhD in Computer Science (to be defended)",
 			institution: "University of Oslo, Oslo, Norway",
-			subjects: "Socio-technical system modelling, collective intelligence,  social-processes optimization, Knowledge Federation",
+			subjects: "Socio-technical low-code workflow systems, AI-augmentation of collective intelligence, social-processes optimization, Knowledge Federation",
 		},
 		{
-			dates: "November 2004",
+			// dates: "November 2004",
 			title: "MPhil in Computer Science and Electrical Engineering",
 			institution: "Department of Computer Science and Information Theory, School of Electrical Engineering, University of Belgrade, Serbia",
 			subjects: "Internet protocols (theory/app), Computer security (theory/app), Information theory, Project managing, Information systems, Graphic (2D, 3D, Fractals)",
 		},
 		{
-			dates: "July 2002",
+			// dates: "July 2002",
 			title: "BA in Computer Science and Electrical Engineering",
 			institution: "Department of Computer Science and Information Theory, School of Electrical Engineering, University of Belgrade, Serbia",
 			subjects: "Data structures and algorithms, DB, OS (multitasking, multithreading, IPC), compilers, VHDL design, mathematics (highly advanced, 5 courses), physics (highly advanced), electronic (highly advanced), telecommunications (highly advanced)",
 		}
 	],
 	work_summary: {
-		general: {
-			title: "Green Tech roles",
-			description: "I had numerous roles in the green tech sector as someone who is passionate about the environment and sustainability, either co-organizer, co-founder or socio-/tech-adviser. Here are the most significant ones:",
-			// не користи се још
-			expertiseTitle: "Sasha Rudan, MSC, PhD Candidate",
-			expertise: "PhD research on collective intelligence and AI-augmentation of socio-technical systems and processes, with an additional practice and focus on the green tech sector, socio-technical entrepreneur.",
-		},
-		positions: [
-			{
-				position: "Co-founder of WasteMatch App/Startup",
-				activities: "I work on co-designing a solution for a gamified cleanTech (crowdsourced market + infrastructure for waste management), working on the business model, customer analysis, and socio-technical design and architecture of the solution",
-			},
-			{
-				position: "Co-founder of an Award-winning eduGame",
-				activities: "Digital + offline eduGame feat. Sustainable Dev Goals and Environmentalism Embodiment. Supports team \"playing\" (solving) over a board (map) sustainability challenges of specific region, augmented with a mobile app that we have co-created",
-			},
-			{
-				position: "Co-organized Oslo Climathon",
-				activities: "I have co-organized Oslo Climathon, a hackathon focused on developing solutions for climate change and sustainability challenges in the city of Oslo. This involved coordinating with local stakeholders, recruiting participants, and facilitating the event to generate innovative ideas and projects addressing environmental issues.",
-			},
-			{
-				position: "Co-organized Belgrade Climathon",
-				activities: "I have co-organized Belgrade Climathon over several years, a hackathon focused on developing solutions for climate change and sustainability challenges in the city of Belgrade.",
-			},
-		],
+		// general: {
+		// 	title: "Green Tech roles",
+		// 	description: "I had numerous roles in the green tech sector as someone who is passionate about the environment and sustainability, either co-organizer, co-founder or socio-/tech-adviser. Here are the most significant ones:",
+		// 	// не користи се још
+		// 	expertiseTitle: "Sasha Rudan, MSC, PhD Candidate",
+		// 	expertise: "PhD research on collective intelligence and AI-augmentation of socio-technical systems and processes, with an additional practice and focus on the green tech sector, socio-technical entrepreneur.",
+		// },
+		// positions: [
+		// 	{
+		// 		position: "Co-founder of WasteMatch App/Startup",
+		// 		activities: "I work on co-designing a solution for a gamified cleanTech (crowdsourced market + infrastructure for waste management), working on the business model, customer analysis, and socio-technical design and architecture of the solution",
+		// 	},
+		// 	{
+		// 		position: "Co-founder of an Award-winning eduGame",
+		// 		activities: "Digital + offline eduGame feat. Sustainable Dev Goals and Environmentalism Embodiment. Supports team \"playing\" (solving) over a board (map) sustainability challenges of specific region, augmented with a mobile app that we have co-created",
+		// 	},
+		// 	{
+		// 		position: "Co-organized Oslo Climathon",
+		// 		activities: "I have co-organized Oslo Climathon, a hackathon focused on developing solutions for climate change and sustainability challenges in the city of Oslo. This involved coordinating with local stakeholders, recruiting participants, and facilitating the event to generate innovative ideas and projects addressing environmental issues.",
+		// 	},
+		// 	{
+		// 		position: "Co-organized Belgrade Climathon",
+		// 		activities: "I have co-organized Belgrade Climathon over several years, a hackathon focused on developing solutions for climate change and sustainability challenges in the city of Belgrade.",
+		// 	},
+		// ],
 	},
 	work: [
 		{
@@ -147,7 +154,7 @@
 		{
 			dates: "2019-2021",
 			position: "POIETO - System Architect and core developer",
-			activities: "Co-creation of an AI anti-bias exploratory and negotiation platform",
+			activities: "Co-creation of an AI anti-bias exploratory and negotiation platform. It supported advanced CRM management of user-flows, content management, and quizzes",
 			employer: "POIETO (https://www.poieto.com/), Feminist AI (https://www.feminist.ai/), NVIDIA Inception Program",
 			technologies: "Angular, TypeScript, Node.js",
 			title: "Frontend, AI bias @ POIETO",
@@ -164,7 +171,7 @@
 		{
 			dates: "2017",
 			position: "Federated Databases - System Architect and core developer - Postdoctoral Level Position",
-			activities: "Federated Databases - Database Mining Group, Knowledge Representation and Reasoning, Data Protection in Healthcare",
+			activities: "Federated Databases - Database Mining Group, Knowledge Representation and Reasoning, Data Protection (protecting against reverse-engineering statical and anonymized data) in Healthcare, GDPR",
 			employer: "Umeå University, Sweden",
 			technologies: "Python, TypeScript, Angular, Node.js, GDPR and data protection healthcare data, database federation, data mining, SPARQL, RDF, OWL, Linked Data, Triple Stores",
 		},
@@ -553,7 +560,6 @@
 	skills: {
 		social: [
 			"Good in conversation and spreading a relaxed atmosphere, helping people I am managing or working with, feel group responsibilities and follow leadership",
-			"Snow/water skiing, cycling, inline-skating, dancing, fishing, yoga, capoera",
 		],
 		organizational: [
 			"Project management, negotiation, team building, brainstorming management",
@@ -597,7 +603,7 @@
 			// "Graphic/WEB/GUI Design (beside normal activities, designing logos)",
 			"Writing poetry and short stories, drawing (published in collections, won prizes)",
 		],
-		other: ["Practicing guitar and Serbian “flute” (frula), dancing, capoeira, snowboarding, tennis, slam/active poetry"],
+		other: ["Practicing guitar and Serbian “flute” (frula), Snow/water skiing, cycling, inline-skating, dancing (folklore, latino, standard), fishing, yoga, capoeira, snowboarding, tennis, slam/active poetry"],
 	},
 	references: [{
 			name: "Christian Høgel",
