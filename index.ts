@@ -2,6 +2,7 @@ import fs from "fs";
 import chalk from "chalk";
 import Mustache from "mustache";
 import JSON5 from "json5";
+import { marked } from "marked";
 
 const appName: string = `[${chalk.bold.greenBright("Open")}${chalk.bold.yellowBright("Resume")}]`
  /**
@@ -29,9 +30,31 @@ const resumeTemplatePath = "./templates/mprinc/resume.html";
 const resumeTemplate = fs.readFileSync(resumeTemplatePath, "utf8");
 console.log(`resumeTemplate: ${resumeTemplate}`);
 
+// Convert Markdown in all string values to inline HTML
+function convertMarkdown(obj: any): any {
+	if (typeof obj === "string") {
+		return marked.parseInline(obj);
+	}
+	if (Array.isArray(obj)) {
+		return obj.map(convertMarkdown);
+	}
+	if (obj && typeof obj === "object") {
+		const result: any = {};
+		for (const key of Object.keys(obj)) {
+			result[key] = convertMarkdown(obj[key]);
+		}
+		return result;
+	}
+	return obj;
+}
+
+// Disable Mustache HTML escaping since we produce HTML from Markdown
+Mustache.escape = (text: string) => text;
+
 console.log(chalk.bold.blueBright(`${appName} building resume ...`));
 resumeObj.__hide = profileNameObj.hide;
-const builtResume = Mustache.render(resumeTemplate, resumeObj);
+const resumeData = convertMarkdown(resumeObj);
+const builtResume = Mustache.render(resumeTemplate, resumeData);
 console.log(`builtResume: ${builtResume}`);
 
 const builtResumePath = "./resumes/mprinc/resume.html";

@@ -9,11 +9,12 @@
   "license": "unknown",
   "private": true,
   "scripts": {
-	"start": "tsx index.ts"
+    "start": "tsx index.ts"
   },
   "dependencies": {
     "chalk": "^5.0.1",
     "json5": "^2.2.1",
+    "marked": "^18.0.2",
     "mustache": "^4.2.0"
   },
   "devDependencies": {
